@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+	#map {
+		width: 100%;
+		height: 400px;
+		background-color: gray;
+		}
+	</style>
+</head>
+<body>
+	<center><h3> My Google Maps Demo</h3></center>
+	<div id="map"></div>
+	<script>
+	function initMap() {
+	var mapDiv = document.getElementById('map');
+	var map = new google.maps.Map(mapDiv, {
+	center: {lat: 48.0710855, lng: -122.1212048},
+	zoom: 15
+	});
+	
+	//locations
+	var myLatlng = new google.maps.LatLng(48.0710855,-122.1212048);
+	var mapOptions = {
+	zoom: 4,
+	center: myLatlng
+}
+	var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+
+	var marker = new google.maps.Marker({
+    position: myLatlng,
+});
+	var myLatlng_1 = new google.maps.LatLng(47.0394291,-122.9639088);
+	var mapOptions = {
+	zoom: 4,
+	center: myLatlng_1
+	}
+	var marker_1 = new google.maps.Marker({
+    position: myLatlng_1,
+});
+	var myLatlng_2 = new google.maps.LatLng(48.1742379,-122.1844234);
+	var mapOptions = {
+	zoom: 4,
+	center: myLatlng_2
+	}
+	var marker_2 = new google.maps.Marker({
+    position: myLatlng_2,
+});
+	var myLatlng_3 = new google.maps.LatLng(47.2429133,-122.5953243);
+	var mapOptions = {
+	zoom: 4,
+	center: myLatlng_3
+	}
+	var marker_3 = new google.maps.Marker({
+    position: myLatlng_3,
+});
+	var myLatlng_4 = new google.maps.LatLng(47.3857479,-122.2757892);
+	var mapOptions = {
+	zoom: 4,
+	center: myLatlng_4
+	}
+	var marker_4 = new google.maps.Marker({
+    position: myLatlng_4,
+});
+	var myLatlng_5 = new google.maps.LatLng(47.5417347,-121.8464567);
+	var mapOptions = {
+	zoom: 4,
+	center: myLatlng_5
+	}
+	var marker_5 = new google.maps.Marker({
+    position: myLatlng_5,
+});
+	var myLatlng_6 = new google.maps.LatLng(47.6698183,-122.1916181);
+	var mapOptions = {
+	zoom: 4,
+	center: myLatlng_6
+	}
+	var marker_6 = new google.maps.Marker({
+    position: myLatlng_6,
+});
+	var myLatlng_7 = new google.maps.LatLng(48.1525513,-122.235084);
+	var mapOptions = {
+	zoom: 4,
+	center: myLatlng_7
+	}
+	var marker_7 = new google.maps.Marker({
+    position: myLatlng_7,
+});
+// To add the marker to the map, call setMap();
+marker.setMap(map);
+marker_1.setMap(map);
+marker_2.setMap(map);
+marker_3.setMap(map);
+marker_5.setMap(map);
+marker_6.setMap(map);
+marker_7.setMap(map);
+
+	
+	
+	
+	
+	
+	
+	}//function bracket
+	
+	</script>
+	<script async defer
+	src="https://maps.googleapis.com/maps/api/js?&callback=initMap">
+	</script>
+</body>
+</html>

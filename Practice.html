@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JS Example</title>
+    <script>
+      function myFunction(){
+      var image=document.getElementById("pic");
+                if(image.src.match("wall.jpg")){
+                    image.src="paris.jpg";
+                }
+                else {
+                    image.src="wall.jpg";
+                    }
+        var words = document.getElementById("welcome");
+        words.innerHTML = "Thanks for visiting!";
+      }
+    </script>
+    <img id="pic" src="wall.jpg">
+  </head>
+  <body>
+    <h1 id="welcome"></h1>
+    <button id="btn" onclick="myFunction()">Click me!
+            </button>
+  </body>
+</html>

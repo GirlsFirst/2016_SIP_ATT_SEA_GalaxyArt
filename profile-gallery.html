@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial scale=1">
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+		<link rel="stylesheet" href="profile.css">
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquerymin.js"></script>
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+		<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+		<title>Profile</title>
+		  <style>
+		  .carousel-inner > .item > img,
+		  .carousel-inner > .item > a > img {
+			  width: 70%;
+			  margin: auto;
+		  }
+		  </style>
+	</head>
+	<body>
+	<!-------------------navbar------------------------------->
+	<nav class="navbar navbar-default navbar-fixed-top">
+	  <div class="container-fluid">
+		<div class="navbar-header">
+		  <a class="navbar-brand" onclick= "clickme()">GalaxyArt</a>
+		</div>
+		<ul class="nav navbar-nav">
+		<li><a href="#">Home</a></li>
+        <li><a href="#">Featured</a></li>
+		<form class="navbar-form navbar-left">
+			<div class="form-group">
+				<input type="text" class="form-control" placeholder="Search">
+			</div>
+			<button type="submit" class="btn btn-default"><span class="glyphicon glyphicon glyphicon-search"></span></button>
+
+        </form>
+		</ul>
+		<ul class="nav navbar-nav navbar-right">
+		  <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+		  <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+		</ul>
+	  </div>
+	</nav>
+	<!---------------------narbar end--------------------------->
+	
+	<!------------------------header---------------------------->
+	<header>
+		<div class="container header">
+		<div class="row">
+			<div class="col-sm-4">
+			<img class="img-circle img-overlay" src="pikachu.jpg">
+			</div>
+			<div class="col-sm-8 infocard jumbotron">
+			<h2 class="name">awonderfulpikachu</h2>
+			<h4 class="about">A wonderful pikachu that likes to draw. >.<</h4>
+			</div>
+		</div>
+		</div>
+	</header>
+	<!---------------------end header--------------------------->
+
+    <div class="btn-pref btn-group btn-group-justified btn-group-lg" role="group" >
+        <div class="btn-group" role="group">
+            <button type="button" id="activity" class="btn btn-primary" href="#tab1" onclick="location.href='profile-activity.html';" data-toggle="tab"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                <div class="hidden-xs">Activity</div>
+            </button>
+        </div>
+        <div class="btn-group" role="group">
+            <button type="button" id="gallery" class="btn btn-primary active" href="#tab2" data-toggle="tab"><span class="glyphicon glyphicon-picture" aria-hidden="true"></span>
+                <div class="hidden-xs">Gallery</div>
+            </button>
+        </div>
+        <div class="btn-group" role="group">
+            <button type="button" id="store" class="btn btn-primary" href="#tab3" onclick="location.href='profile-store.html';" data-toggle="tab"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
+                <div class="hidden-xs">Store</div>
+            </button>
+        </div>
+    </div>
+	
+
+	<!---------------image----------------------->
+	<div class="contain">
+	
+	<div class="img img-rounded">
+	  <a target="_blank" href="1.jpg">
+		<img src="1.jpg" alt="Trolltunga Norway">
+	  </a>
+	  <div class="desc">Rune Factory 4 fourth year anniversary oh yeah C:</div>
+	</div>
+	<div class="img img-rounded">
+	  <a target="_blank" href="2.jpg">
+		<img src="2.jpg" alt="Trolltunga Norway">
+	  </a>
+	  <div class="desc">Blackrockshooter look a lot like miku. ^_^</div>
+	</div>
+	<div class="img img-rounded">
+	  <a target="_blank" href="3.jpg">
+		<img src="3.jpg" alt="Trolltunga Norway">
+	  </a>
+	  <div class="desc">It's christmas it's christmas~~</div>
+	</div>
+	<div class="img img-rounded">
+	  <a target="_blank" href="4.jpg">
+		<img src="4.jpg" alt="Trolltunga Norway">
+	  </a>
+	  <div class="desc">One day this will be us. >_<</div>
+	</div>
+	<div class="img img-rounded">
+	  <a target="_blank" href="galmascot.jpg">
+		<img src="galmascot.jpg" alt="Trolltunga Norway">
+	  </a>
+	  <div class="desc">I drew a mascot for this website. ^_^</div>
+	</div>
+	<div class="img img-rounded">
+	  <a target="_blank" href="5.jpg">
+		<img src="5.jpg" alt="Trolltunga Norway">
+	  </a>
+	  <div class="desc">Bastet is so cute with wedding dress.</div>
+	</div>
+	<div class="img img-rounded">
+	  <a target="_blank" href="6.jpg">
+		<img src="6.jpg" alt="Trolltunga Norway">
+	  </a>
+	  <div class="desc">>.<</div>
+	</div>
+	<div class="img img-rounded">
+	  <a target="_blank" href="7.jpg">
+		<img src="7.jpg" alt="Trolltunga Norway">
+	  </a>
+	  <div class="desc">Eli is so cute~</div>
+	</div>
+	<div class="img img-rounded">
+	  <a target="_blank" href="8.jpg">
+		<img src="8.jpg" alt="Trolltunga Norway">
+	  </a>
+	  <div class="desc">Currently watcing this anime.</div>
+	</div>
+	</div>
+
+	<!---------------image end----------------------->
+
+	</body>
+</html>
